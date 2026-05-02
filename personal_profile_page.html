@@ -1,0 +1,262 @@
+<!-- THIS IS MY PERSONAL PROFILE PAGE  -->
+ <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parth Gawade – Profile</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f0;
+      color: #222;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #888;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Header */
+    .header { background: #eef6f2; display: flex; align-items: center; gap: 1.5rem; }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #9FE1CB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #085041;
+      flex-shrink: 0;
+    }
+
+    .header h1 { font-size: 22px; }
+    .header .role { font-size: 14px; color: #555; margin-top: 4px; }
+    .header .location { font-size: 13px; color: #888; margin-top: 2px; }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      background: #d0eaf8;
+      color: #1a5f8a;
+      border-radius: 6px;
+      padding: 3px 10px;
+      margin-top: 8px;
+    }
+
+    /* Stats */
+    .stats-row { display: flex; gap: 1rem; }
+    .stat {
+      flex: 1;
+      background: #f7f7f5;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-num { font-size: 24px; font-weight: bold; }
+    .stat-label { font-size: 12px; color: #888; margin-top: 4px; }
+
+    /* Skills */
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tag {
+      font-size: 13px;
+      background: #f2f2ef;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 4px 12px;
+    }
+
+    /* Projects */
+    .project { padding: 10px 0; border-bottom: 1px solid #eee; }
+    .project:last-child { border-bottom: none; padding-bottom: 0; }
+    .project-title { font-size: 15px; font-weight: bold; }
+    .project-desc { font-size: 13px; color: #555; margin-top: 4px; line-height: 1.6; }
+    .project a { font-size: 12px; color: #1a5f8a; margin-top: 4px; display: inline-block; }
+
+    /* Education */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .edu-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .degree { font-size: 15px; font-weight: bold; }
+    .school { font-size: 13px; color: #666; margin-top: 2px; }
+    .year { font-size: 13px; color: #999; white-space: nowrap; }
+
+    /* Hobbies */
+    .hobby-tag {
+      display: inline-block;
+      font-size: 13px;
+      background: #f2f2ef;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 4px 12px;
+      margin: 4px 4px 0 0;
+    }
+
+    /* Contact */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .contact-label { font-size: 12px; color: #888; }
+    .contact-val { font-size: 14px; margin-top: 2px; }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="card header">
+    <div class="avatar">AK</div>
+    <div>
+      <h1>Parth Gawade</h1>
+      <p class="role">Student at MIT WPU</p>
+      <p class="location">Pune, Maharashtra, India</p>
+      <span class="badge">Open to work</span>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I'm a First-year computer science student passionate about building clean, user-friendly web apps. I love turning ideas into real projects and am always learning something new — currently exploring React and backend basics with Node.js.</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="card">
+    <h2>At a Glance</h2>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1.5</div>
+        <div class="stat-label">Years Coding</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Technologies</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">Python</span>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="card">
+    <h2>Projects</h2>
+    <div class="project">
+      <div class="project-title">Parking Lot Entry System | Digital Electronics Project</div>
+      <div class="project-desc">🔧 What I built:
+• A 4-bit asynchronous ripple counter (74LS93) truncated at count 12 (1100₂)
+• Automatic RESET logic triggered when Q3 & Q2 go HIGH simultaneously
+• A FULL indicator LED that activates at maximum parking capacity (12 cars)
+• Verified the design using circuit simulation — logic responds within nanoseconds</div>
+      <a 
+    </div>
+    <div class="project">
+      <div class="project-title">To-Do List App</div>
+      <div class="project-desc">A simple task manager with local storage, drag-and-drop reordering, and dark mode support.</div>
+      <a href="#">github.com/arjun/todo-app</a>
+    </div>
+    <div class="project">
+      <div class="project-title">Portfolio Website</div>
+      <div class="project-desc">This very page! Built with plain HTML, CSS, and a sprinkle of JavaScript. Hosted on GitHub Pages.</div>
+      <a href="#">arjunkumar.dev</a>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="card">
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div>
+        <div class="degree">B.Tech in Computer Science</div>
+        <div class="school">Savitribai Phule Pune University</div>
+      </div>
+      <div class="year">2023 – 2027</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="degree">Higher Secondary (Class XII)</div>
+        <div class="school">Kendriya Vidyalaya, Pune</div>
+      </div>
+      <div class="year">2023</div>
+    </div>
+  </div>
+
+  <!-- HOBBIES -->
+  <div class="card">
+    <h2>Hobbies &amp; Interests</h2>
+    <span class="hobby-tag">Open Source</span>
+    <span class="hobby-tag">Chess</span>
+    <span class="hobby-tag">Sketching</span>
+    <span class="hobby-tag">Badminton</span>
+    <span class="hobby-tag">Sci-fi Books</span>
+    <span class="hobby-tag">Side Projects</span>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>Contact &amp; Links</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-val">arjun@example.com</div>
+      </div>
+      <div>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-val">linkedin.com/in/arjunkumar</div>
+      </div>
+      <div>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-val">github.com/arjunkumar</div>
+      </div>
+      <div>
+        <div class="contact-label">Website</div>
+        <div class="contact-val">arjunkumar.dev</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
